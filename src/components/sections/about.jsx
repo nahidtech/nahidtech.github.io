@@ -1,5 +1,4 @@
-import React from 'react'
-import { RiArrowRightUpLine, RiDownloadLine, RiFacebookCircleFill, RiTwitterXLine, RiLinkedinFill, RiGithubLine } from '@remixicon/react'
+import { RiArrowRightUpLine, RiDownloadLine, RiFacebookCircleFill, RiGithubLine, RiLinkedinFill, RiTwitterXLine } from '@remixicon/react'
 import profile_img from "../../assets/images/about/profile.jpg"
 import SlideUp from '../animations/slideUp'
 const About = () => {
@@ -12,7 +11,7 @@ const About = () => {
                         <SlideUp>
                             <div className="about-image-part">
                                 <img src={profile_img} alt="About Me" />
-                                <h2>Kane Walker</h2>
+                                <h2>Nahid Hasan</h2>
                                 <div className="about-btn btn-one text-center">
                                     <h6>Available for Work</h6>
                                     <div className="circle pulse color-pulse"></div>
@@ -34,8 +33,7 @@ const About = () => {
                         <div className="about-content-part">
                             <SlideUp>
                                 <h2>
-                                    Hello, I’m Kane Walker, <span>Framer Developer</span> and UX / UI Designer
-                                    Based in California.
+                                    Hello, I’m Nahid Hasan, <span>IT Professional, Frontend Developer, Graphic Designer & Video Editor based in Bangladesh.
                                 </h2>
                                 <div className="hero-btns">
                                     <a href="#" className="theme-btn">Download CV <i><RiDownloadLine size={16} /></i></a>
@@ -43,12 +41,12 @@ const About = () => {
                             </SlideUp>
                             <SlideUp>
                                 <ul className="list-style-one two-column">
-                                    <li><i><RiArrowRightUpLine size={18} /></i> Logo Design</li>
-                                    <li><i><RiArrowRightUpLine size={18} /></i> Social Marketing</li>
-                                    <li><i><RiArrowRightUpLine size={18} /></i> Branding Identity</li>
-                                    <li><i><RiArrowRightUpLine size={18} /></i> Digital Marketing</li>
                                     <li><i><RiArrowRightUpLine size={18} /></i> Web Design</li>
-                                    <li><i><RiArrowRightUpLine size={18} /></i> Product Design</li>
+                                    <li><i><RiArrowRightUpLine size={18} /></i> Web Development</li>
+                                    <li><i><RiArrowRightUpLine size={18} /></i> Frontend Design</li>
+                                    <li><i><RiArrowRightUpLine size={18} /></i> Video Editing</li>
+                                    <li><i><RiArrowRightUpLine size={18} /></i> Wordpress Development</li>
+                                    <li><i><RiArrowRightUpLine size={18} /></i> Graphic Design</li>
                                 </ul>
                             </SlideUp>
                         </div>
