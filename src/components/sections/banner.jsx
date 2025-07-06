@@ -18,7 +18,6 @@ const Banner = () => {
                     <span>Frontend Developer</span>
                     <span>Graphic Designer</span>
                     <span>Video Editor</span>
-                    <span>Video Editor</span>
                   </div>
                 </div>
               </SlideUp>
