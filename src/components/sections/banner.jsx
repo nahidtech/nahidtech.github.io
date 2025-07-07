@@ -14,10 +14,11 @@ const Banner = () => {
                     I'm <span>Nahid</span> Hasan
                   </h1>
                   <div className="job">
-                    <span>IT Professional</span>
                     <span>Frontend Developer</span>
+                    <span>Wordpress Developer</span>
                     <span>Graphic Designer</span>
                     <span>Video Editor</span>
+                    <span>IT Professional</span>
                   </div>
                 </div>
               </SlideUp>
