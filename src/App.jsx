@@ -5,7 +5,6 @@ import Contact from "./components/sections/contact/contact";
 import Footer from "./components/sections/footer";
 import Header from "./components/sections/header";
 import Portfolio from "./components/sections/portfolio";
-import Pricing from "./components/sections/pricing";
 import Services from "./components/sections/services";
 import Testimonial from "./components/sections/testimonial";
 import ProgressBar from "./components/ui/progressBar";
@@ -20,7 +19,7 @@ const App = () => {
       {/* <Experience /> */}
       <Portfolio />
       <Testimonial />
-      <Pricing />
+      {/* <Pricing /> */}
       <Blogs />
       <Contact />
       <Footer />

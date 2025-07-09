@@ -21,7 +21,9 @@ const ContactInfo = () => {
             </i>
           </div>
           <h2>contact number:</h2>
-          <p>+8801722940893</p>
+          <p>
+            <a href="tel:+8801722940893">+8801722940893</a>
+          </p>
         </div>
 
         <div className="single-contact wow fadeInUp" data-wow-delay=".6s">
@@ -31,7 +33,9 @@ const ContactInfo = () => {
             </i>
           </div>
           <h2>Email us:</h2>
-          <p>nahidhasanbd71@mail.com</p>
+          <p>
+            <a href="mailto:nahidhasanbd71@mail.com">nahidhasanbd71@mail.com</a>
+          </p>
         </div>
       </div>
     </div>

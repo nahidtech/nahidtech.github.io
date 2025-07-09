@@ -4,7 +4,6 @@ import {
   RiFacebookCircleFill,
   RiGithubLine,
   RiLinkedinFill,
-  RiTwitterXLine,
 } from "@remixicon/react";
 import profile_img from "../../assets/images/about/profile.jpg";
 import SlideUp from "../animations/slideUp";
@@ -36,13 +35,6 @@ const About = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="">
-                        <i>
-                          <RiTwitterXLine size={20} />
-                        </i>
-                      </a>
-                    </li>
-                    <li>
                       <a
                         href="https://www.linkedin.com/in/nahidtech/"
                         target="_blank"
@@ -70,7 +62,7 @@ const About = () => {
             <div className="about-content-part">
               <SlideUp>
                 <h2>
-                  Hello, I’m Nahid Hasan, <span>Frontend Developer</span> and
+                  Hello, I’m Nahid Hasan, <span>Frontend Developer</span> &
                   Wordpress Developer in Bangladesh.
                 </h2>
                 <div className="hero-btns">

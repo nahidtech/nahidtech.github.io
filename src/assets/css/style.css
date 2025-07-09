@@ -1201,8 +1201,8 @@ html {
 * ----------------------------------------------------------------------------------------
 */
 .about-area {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .hero-content .job {
@@ -1330,8 +1330,8 @@ html {
 * ----------------------------------------------------------------------------------------
 */
 .services-area {
-  padding-top: 20px;
-  padding-bottom: 100px;
+  padding-top: 0px;
+  padding-bottom: 20px;
 }
 
 .service-item {
@@ -1510,8 +1510,8 @@ ul.extra-skills li i {
 * ----------------------------------------------------------------------------------------
 */
 .projects-area {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .project-image {
@@ -1766,7 +1766,7 @@ ul.extra-skills li i {
 * ----------------------------------------------------------------------------------------
 */
 .testimonials-area {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
   background: var(--grey-bg);
 }
@@ -1955,8 +1955,8 @@ ul.extra-skills li i {
 * ----------------------------------------------------------------------------------------
 */
 .contact-area {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .contact-form-area .form-group {
@@ -2335,7 +2335,7 @@ ul.extra-skills li i {
 * ----------------------------------------------------------------------------------------
 */
 .blog-area {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 50px;
 }
 

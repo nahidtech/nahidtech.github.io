@@ -1,81 +1,106 @@
 import { RiMailLine } from "@remixicon/react";
+import emailjs from "emailjs-com";
+import { useRef, useState } from "react";
 
 const ContactForm = () => {
+  const form = useRef();
+  const [statusMessage, setStatusMessage] = useState("");
+  const [isError, setIsError] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_nahidhasan",
+        "template_aqj2zbz",
+        form.current,
+        "Ac-SAi4k7Mlyboyfj"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setIsError(false);
+          setStatusMessage("✅ Message sent successfully!");
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          setIsError(true);
+          setStatusMessage("❌ Failed to send message. Please try again.");
+        }
+      );
+  };
+
   return (
     <div className="col-lg-8">
-      <div className="contact-form contact-form-area wow fadeInUp delay-0-4s">
-        <form
-          id="contactForm"
-          className="contactForm"
-          name="contactForm"
-          action="assets/php/form-process.php"
-          method="post"
-        >
+      <div className="contact-form contact-form-area">
+        <form ref={form} onSubmit={sendEmail} className="contactForm">
           <div className="row">
+            {/* Name */}
             <div className="col-md-6">
               <div className="form-group">
                 <label htmlFor="name">Full Name</label>
                 <input
                   type="text"
-                  id="name"
                   name="name"
                   className="form-control"
-                  defaultValue=""
-                  placeholder="Steve Milner"
-                  required=""
-                  data-error="Please enter your Name"
+                  placeholder="John Doe"
+                  required
                 />
-                <label htmlFor="name" className="for-icon">
-                  <i className="far fa-user"></i>
-                </label>
-                <div className="help-block with-errors"></div>
               </div>
             </div>
+
+            {/* Email */}
             <div className="col-md-6">
               <div className="form-group">
                 <label htmlFor="email">Email Address</label>
                 <input
                   type="email"
-                  id="email"
                   name="email"
                   className="form-control"
-                  defaultValue=""
-                  placeholder="hello@websitename.com"
-                  required=""
-                  data-error="Please enter your Email"
+                  placeholder="hello@example.com"
+                  required
                 />
-                <label htmlFor="email" className="for-icon">
-                  <i className="far fa-envelope"></i>
-                </label>
-                <div className="help-block with-errors"></div>
               </div>
             </div>
+
+            {/* Message */}
             <div className="col-md-12">
               <div className="form-group">
                 <label htmlFor="message">Your Message</label>
                 <textarea
                   name="message"
-                  id="message"
                   className="form-control"
                   rows="4"
-                  placeholder="Write Your message"
-                  required=""
-                  data-error="Please Write your Message"
+                  placeholder="Write Your Message"
+                  required
                 ></textarea>
-                <div className="help-block with-errors"></div>
               </div>
             </div>
+
+            {/* Submit */}
             <div className="col-md-12">
               <div className="form-group mb-0">
                 <button type="submit" className="theme-btn">
-                  Send Me Message{" "}
-                  <i>
-                    <RiMailLine size={16} />
-                  </i>
+                  Send Me Message <RiMailLine size={16} />
                 </button>
-                <div id="msgSubmit" className="hidden"></div>
               </div>
             </div>
+
+            {/* Status Message */}
+            {statusMessage && (
+              <div className="col-md-12 mt-3">
+                <div
+                  style={{
+                    color: isError ? "#dc3545" : "#28a745",
+                    fontWeight: "bold",
+                  }}
+                >
+                  {statusMessage}
+                </div>
+              </div>
+            )}
           </div>
         </form>
       </div>
