@@ -59,7 +59,7 @@ const ContactForm = () => {
                   type="email"
                   name="email"
                   className="form-control"
-                  placeholder="hello@example.com"
+                  placeholder="johndoe@example.com"
                   required
                 />
               </div>

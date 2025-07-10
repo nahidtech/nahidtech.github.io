@@ -1085,7 +1085,8 @@ html {
 * ----------------------------------------------------------------------------------------
 */
 .main-hero-area {
-  padding-top: 115px;
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 
 .hero-content {
@@ -1202,7 +1203,7 @@ html {
 */
 .about-area {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
 .hero-content .job {
@@ -1330,8 +1331,8 @@ html {
 * ----------------------------------------------------------------------------------------
 */
 .services-area {
-  padding-top: 0px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .service-item {
@@ -1767,7 +1768,7 @@ ul.extra-skills li i {
 */
 .testimonials-area {
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   background: var(--grey-bg);
 }
 

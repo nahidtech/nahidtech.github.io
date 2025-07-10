@@ -10,7 +10,7 @@ const ContactInfo = () => {
               <RiMapPinLine size={20} />
             </i>
           </div>
-          <h2>our office:</h2>
+          <h2>my address:</h2>
           <p>Dhaka Bangladesh</p>
         </div>
 
@@ -32,7 +32,7 @@ const ContactInfo = () => {
               <RiMailLine size={20} />
             </i>
           </div>
-          <h2>Email us:</h2>
+          <h2>Email me:</h2>
           <p>
             <a href="mailto:nahidhasanbd71@mail.com">nahidhasanbd71@mail.com</a>
           </p>
